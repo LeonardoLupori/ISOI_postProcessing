@@ -18,7 +18,7 @@ defaultParameters.filter4SlopeDiff   = 3;
 % PREFERENCE FILE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % modify this path to point to the preferences file in your computer
-prefFile = 'C:\Users\Leonardo Lupori\Documents\MATLAB\IOS\PostProcessingTOOLBOX_1.2\scoring_singleEye\preferences.mat';
+prefFile = 'C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\preferences.mat';
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 if exist('handles','var') && isfield(handles,'refineRoiFig') && ishandle(handles.refineRoiFig)

@@ -1,5 +1,5 @@
 clear all; clc
-StartFolder = 'D:\experimental_DATA\iosDATA\exp_fasting_MD\analized_Data';
+StartFolder = 'D:\PizzorussoLAB';
 varsToCategorize = {'eye','timepoint','genotype','treatment'};
 finalSorting = {'miceNumber'};
 varsToSave = {'tabResults', 'tabResultsROR'};

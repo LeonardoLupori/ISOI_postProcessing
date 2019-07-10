@@ -1,6 +1,6 @@
 %% Load the results table
 clearvars, clc
-defaultPath = 'D:\experimental_DATA\iosDATA\exp_enrichment+MD\analizedData\';
+defaultPath = 'D:\PizzorussoLAB\';
 [FileName,PathName,FilterIndex] = uigetfile(defaultPath,'MultiSelect','off');
 if FilterIndex ~= 0
     load([PathName filesep FileName]);

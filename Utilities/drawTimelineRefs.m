@@ -58,8 +58,11 @@ else
 end
 
 % Plotting of the reference lines
-line([0 0],YLimits,'Linewidth', 1.1,'Color', 'K', 'Parent', handle)
-line(XLimits ,[0 0],'Linewidth', 1.1,'Color', 'K', 'Parent', handle)
+lV = line([0 0],YLimits,'Linewidth', 1.1,'Color', 'K', 'Parent', handle);
+lH = line(XLimits ,[0 0],'Linewidth', 1.1,'Color', 'K', 'Parent', handle);
+
+% uistack(lV,'bottom');
+% uistack(lH,'bottom');
 
 % Set the new limits
 set(handle, 'XLim', XLimits);
