@@ -4,14 +4,14 @@
     <param.icon />
     <param.icons />
     <param.version>1.0</param.version>
-    <param.authnamewatermark />
-    <param.email />
-    <param.company />
-    <param.summary />
+    <param.authnamewatermark>Leonardo Lupori</param.authnamewatermark>
+    <param.email>leonardo.lupori@sns.it</param.email>
+    <param.company>Scuola Normale Superiore</param.company>
+    <param.summary>A software for Intrinsic Signal Optical Imaging Analysis</param.summary>
     <param.description />
-    <param.screenshot />
+    <param.screenshot>C:\Users\Leonardo\Desktop\a52a0d11608b2cb1a6f7b4ae56da6a66_400x400.png</param.screenshot>
     <param.guid />
-    <param.installpath.string>\IOSpostprocessingtool\</param.installpath.string>
+    <param.installpath.string>\Scuola Normale Superiore\IOSpostprocessingtool\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo />
     <param.install.notes />
@@ -41,12 +41,7 @@
       <param.icon />
       <param.icons />
       <param.version />
-      <param.authnamewatermark />
-      <param.email />
-      <param.company />
-      <param.summary />
       <param.description />
-      <param.screenshot />
       <param.guid />
       <param.installpath.string />
       <param.installpath.combo />
@@ -80,7 +75,17 @@
     </fileset.main>
     <fileset.resources />
     <fileset.package />
-    <fileset.depfun />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\info_dialog.mlapp</file>
+      <file>${PROJECT_ROOT}\info_edit.mlapp</file>
+      <file>${PROJECT_ROOT}\prefs.mat</file>
+      <file>C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\Utilities\drawTimelineRefs.m</file>
+      <file>C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\Utilities\dRoR.m</file>
+      <file>C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\Utilities\imThresh.m</file>
+      <file>C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\Utilities\ios_preprocessing.m</file>
+      <file>C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\Utilities\misField.m</file>
+      <file>C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\Utilities\timeline.m</file>
+    </fileset.depfun>
     <build-deliverables>
       <file location="${PROJECT_ROOT}\IOSpostprocessingtool\for_testing" name="splash.png" optional="false">C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\IOS_scoringGUI\IOSpostprocessingtool\for_testing\splash.png</file>
       <file location="${PROJECT_ROOT}\IOSpostprocessingtool\for_testing" name="IOSpostprocessingtool.exe" optional="false">C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\IOS_scoringGUI\IOSpostprocessingtool\for_testing\IOSpostprocessingtool.exe</file>
