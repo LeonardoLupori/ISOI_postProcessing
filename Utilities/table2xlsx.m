@@ -24,6 +24,7 @@ for i=1:size(names,2)
 %         validColumns = [validColumns i];
 %     end
 end
+
 FilterSpec = '*.xlsx';
 defaultName = '.\SummaryTable.xlsx';
 [FileName,PathName,FilterIndex] = uiputfile(FilterSpec,'Save excel data Table',defaultName);
