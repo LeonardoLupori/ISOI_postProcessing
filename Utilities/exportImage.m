@@ -8,7 +8,8 @@ function bool = exportImage(analysisFilePath, valuesRange, rereferenced, cropLim
 % ARGUMENTS
 % analysisFilePath: Full path to the analysis file
 % valuesRange(optional): 2 elements vector containing the black and white values
-% rereferenced(optional): Logical value indicating whether to use the rereferenced image or not
+% rereferenced(optional): Logical value indicating whether to use the
+% rereferenced image or not (default: false)
 % cropLimits(optional): 4 element vector containing the limits for cropping. (x and y 
 % coordinates starting from the top left). 
 % 

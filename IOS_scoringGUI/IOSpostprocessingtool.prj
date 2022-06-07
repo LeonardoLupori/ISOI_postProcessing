@@ -1,15 +1,20 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\IOS_scoringGUI\IOSpostprocessingtool.prj" location="C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\IOS_scoringGUI" name="IOSpostprocessingtool" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="4007315455" file="C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\IOS_scoringGUI\IOSpostprocessingtool.prj" location="C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\IOS_scoringGUI" name="IOSpostprocessingtool" preferred-package-location="C:\Users\Leonardo\Documents\MATLAB\IOS\ISOI_postProcessing\IOS_scoringGUI\IOSpostprocessingtool\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>IOSpostprocessingtool</param.appname>
-    <param.icon />
-    <param.icons />
+    <param.icon>${PROJECT_ROOT}\IOSpostprocessingtool_resources\icon.ico</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\IOSpostprocessingtool_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\IOSpostprocessingtool_resources\icon_32.png</file>
+      <file>${PROJECT_ROOT}\IOSpostprocessingtool_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\IOSpostprocessingtool_resources\icon_16.png</file>
+    </param.icons>
     <param.version>1.0</param.version>
     <param.authnamewatermark>Leonardo Lupori</param.authnamewatermark>
     <param.email>leonardo.lupori@sns.it</param.email>
     <param.company>Scuola Normale Superiore</param.company>
     <param.summary>A software for Intrinsic Signal Optical Imaging Analysis</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\Leonardo\Desktop\a52a0d11608b2cb1a6f7b4ae56da6a66_400x400.png</param.screenshot>
+    <param.screenshot>C:\Users\Leonardo\Desktop\splash.png</param.screenshot>
     <param.guid />
     <param.installpath.string>\Scuola Normale Superiore\IOSpostprocessingtool\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
@@ -27,7 +32,7 @@
     <param.web.mcr>true</param.web.mcr>
     <param.package.mcr>false</param.package.mcr>
     <param.no.mcr>false</param.no.mcr>
-    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.web.mcr.name>IOS_postProcessing_Installer</param.web.mcr.name>
     <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
     <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
     <param.windows.command.prompt>true</param.windows.command.prompt>
@@ -38,8 +43,6 @@
     <param.example />
     <param.help.text />
     <unset>
-      <param.icon />
-      <param.icons />
       <param.version />
       <param.description />
       <param.guid />
@@ -59,7 +62,6 @@
       <param.web.mcr />
       <param.package.mcr />
       <param.no.mcr />
-      <param.web.mcr.name />
       <param.package.mcr.name />
       <param.no.mcr.name />
       <param.windows.command.prompt />
@@ -76,6 +78,7 @@
     <fileset.resources />
     <fileset.package />
     <fileset.depfun>
+      <file>${PROJECT_ROOT}\dataCollectFun.m</file>
       <file>${PROJECT_ROOT}\info_dialog.mlapp</file>
       <file>${PROJECT_ROOT}\info_edit.mlapp</file>
       <file>${PROJECT_ROOT}\prefs.mat</file>

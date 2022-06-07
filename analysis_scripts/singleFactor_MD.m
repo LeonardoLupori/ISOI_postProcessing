@@ -20,6 +20,8 @@ desiredVariable = 'avgAmplitude'; % choose the variable of interest
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+tableToAnalyze.treatment(isundefined(tableToAnalyze.treatment)) = 'none';
+
 % This assumes there are only 2 timepoints.
 outputTable = tableToAnalyze(:,{'miceID' groupingFactor 'eye' 'timepoint' desiredVariable});
 availableTimepoints = unique(outputTable.timepoint);
